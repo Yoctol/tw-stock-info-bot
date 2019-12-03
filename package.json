@@ -1,15 +1,20 @@
 {
   "name": "tw-stock-info-bot",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
   "scripts": {
+    "build": "echo fixme",
     "dev": "bottender dev",
     "lint": "eslint .",
-    "start": "bottender start",
-    "test": "jest"
+    "start": "node server.js",
+    "test": "jest",
+    "preversion": "npm run test"
   },
   "dependencies": {
-    "bottender": "1.0.0-beta.4"
+    "axios": "^0.19.0",
+    "bottender": "1.0.0-beta.4",
+    "messaging-api-line": "^0.8.3",
+    "minimist": "^1.2.0",
+    "mongodb": "^3.3.5"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
