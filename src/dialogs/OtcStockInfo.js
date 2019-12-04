@@ -56,7 +56,7 @@ module.exports = async function TseStockInfo(context) {
                 size: 'md',
                 weight: 'bold',
                 color:
-                  marketPrice - yesterdayClosePrice > 0 ? '#FF0000' : '#00FF00',
+                  marketPrice - yesterdayClosePrice > 0 ? '#FF3C20' : '#33C02B',
               },
             ],
             margin: 'lg',
