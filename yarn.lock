@@ -999,6 +999,11 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.9.0.tgz#24390e6ad61386b0a747265754d2a17219de862c"
   integrity sha512-Uvq6hVe90D0B2WEnUqtdgY1bATGz3mw33nH9Y+dmA+w5DHvUmBgkr5rM/KCHpCsiFNRUfokW/szpPPgMK2hm4A==
 
+axios-error@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/axios-error/-/axios-error-0.8.1.tgz#4d9c21370465c290d07192e7f3eacfff49c256ae"
+  integrity sha512-4YIf0FK2aO8HHVAQXvVFK2oPQSsOh3P1WQjkwQwO3oFjq4vO3S3YSyiRzyebBIR4NmcHaMJ6W5m0iHuisG7lTA==
+
 axios-error@^1.0.0-beta.2, axios-error@^1.0.0-beta.5:
   version "1.0.0-beta.5"
   resolved "https://registry.yarnpkg.com/axios-error/-/axios-error-1.0.0-beta.5.tgz#4628b91d89a25bde810f4c388f456b23274868f9"
@@ -3797,6 +3802,11 @@ lodash.flatten@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
   integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
 
+lodash.omit@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
+  integrity sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -3936,6 +3946,19 @@ messaging-api-common@^1.0.0-beta.2, messaging-api-common@^1.0.0-beta.5:
     map-obj "^4.1.0"
     pascal-case "^2.0.1"
     snake-case "^2.1.0"
+    url-join "^4.0.1"
+
+messaging-api-line@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/messaging-api-line/-/messaging-api-line-0.8.3.tgz#53344ba1e88bc91da5c03df5618e32a395e176e8"
+  integrity sha512-EQRqW9UMtfQPw/PfnkFue7eSXZlxX2Ke5frFGhl6UHUW5Qfi4KPpvAqf2VTaU/cU7rGhGnZWuNbjoxkCWDyT8A==
+  dependencies:
+    axios "^0.19.0"
+    axios-error "^0.8.1"
+    debug "^4.1.1"
+    image-type "^4.1.0"
+    invariant "^2.2.4"
+    lodash.omit "^4.5.0"
     url-join "^4.0.1"
 
 messaging-api-line@^1.0.0-beta.5:
@@ -4117,7 +4140,7 @@ mkpath@^0.1.0:
   resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-0.1.0.tgz#7554a6f8d871834cc97b5462b122c4c124d6de91"
   integrity sha1-dVSm+Nhxg0zJe1RisSLEwSTW3pE=
 
-mongodb@^3.3.4:
+mongodb@^3.3.4, mongodb@^3.3.5:
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.3.5.tgz#38d531013afede92b0dd282e3b9f3c08c9bdff3b"
   integrity sha512-6NAv5gTFdwRyVfCz+O+KDszvjpyxmZw+VlmqmqKR2GmpkeKrKFRv/ZslgTtZba2dc9JYixIf99T5Gih7TIWv7Q==
