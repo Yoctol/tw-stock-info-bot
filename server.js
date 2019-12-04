@@ -15,7 +15,8 @@ if (isConsole) {
     (async () => {
       try {
         const client = await MongoClient.connect(
-          process.env.MONGO_URL || 'mongodb://localhost:27017/twstock-info-bot',
+          process.env.MONGODB_URI ||
+            'mongodb://localhost:27017/twstock-info-bot',
           {
             useUnifiedTopology: true,
           }

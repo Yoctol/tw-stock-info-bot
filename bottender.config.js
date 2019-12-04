@@ -7,7 +7,8 @@ module.exports = {
       },
       mongo: {
         url:
-          process.env.MONGO_URL || 'mongodb://localhost:27017/twstock-info-bot',
+          process.env.MONGODB_URI ||
+          'mongodb://localhost:27017/twstock-info-bot',
         collectionName: 'sessions',
       },
     },
