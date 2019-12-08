@@ -130,10 +130,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bottender/express@^1.0.0-beta.3":
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@bottender/express/-/express-1.0.0-beta.3.tgz#4ff3c88a593cb39acd47a30d127b9d8cae97670a"
-  integrity sha512-c53TNGKxQIqon6jZPjIBFQPGBd2EBaFpabf7/aLyZR+at97JKNPVsjWusuR3Lus+FDPOBf3TpzoAbHbszqL/cg==
+"@bottender/express@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@bottender/express/-/express-1.0.0.tgz#23784b605ff755947f9d1b850dc02b1caa686559"
+  integrity sha512-kUmT2NvA8mK9TzKfTaL7exR3W3ER7rDsikaPNs+8lDLWRPANbJUA5kooXlWHXVJhueVebPq185MbceH+/L3PoA==
   dependencies:
     body-parser "^1.19.0"
     express "^4.17.1"
@@ -1117,12 +1117,12 @@ body-parser@1.19.0, body-parser@^1.19.0:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
-bottender@1.0.0-beta.4:
-  version "1.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/bottender/-/bottender-1.0.0-beta.4.tgz#44702e53dfce7466631e2caeccf826d6a887178a"
-  integrity sha512-58lonrxjSUXrw8qJwAE+S3DPbRdQxN7WsbHpUfoGeBRpcwW2ZcjvS0vOtDNCQyoKs+wUS8+tOexrevNvZqhwCg==
+bottender@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/bottender/-/bottender-1.0.0.tgz#c53979eb032cc00763cbdf143b7c51fed560288b"
+  integrity sha512-ol/nFwGTTi8YlpuiMpT+FQWkQ3xHfR4/ek8pbAXP2ePnKeefNoBVo83dWUXw3i/RecuQPcB9Bz1i7aFX1UOOwQ==
   dependencies:
-    "@bottender/express" "^1.0.0-beta.3"
+    "@bottender/express" "^1.0.0"
     "@hapi/joi" "^15.1.1"
     "@slack/rtm-api" "^5.0.3"
     arg "^4.1.1"
@@ -1137,6 +1137,7 @@ bottender@1.0.0-beta.4:
     express "^4.17.1"
     figures "^3.1.0"
     file-type "^12.4.0"
+    fromentries "^1.2.0"
     fs-extra "^8.1.0"
     hasha "^5.1.0"
     import-fresh "^3.2.1"
@@ -2416,6 +2417,11 @@ fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
+
+fromentries@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fromentries/-/fromentries-1.2.0.tgz#e6aa06f240d6267f913cea422075ef88b63e7897"
+  integrity sha512-33X7H/wdfO99GdRLLgkjUrD4geAFdq/Uv0kl3HD4da6HDixd2GUg8Mw7dahLCV9r/EARkmtYBB6Tch4EEokFTQ==
 
 fs-extra@^8.1.0:
   version "8.1.0"
