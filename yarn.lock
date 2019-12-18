@@ -130,10 +130,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bottender/express@^1.0.0-beta.3":
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@bottender/express/-/express-1.0.0-beta.3.tgz#4ff3c88a593cb39acd47a30d127b9d8cae97670a"
-  integrity sha512-c53TNGKxQIqon6jZPjIBFQPGBd2EBaFpabf7/aLyZR+at97JKNPVsjWusuR3Lus+FDPOBf3TpzoAbHbszqL/cg==
+"@bottender/express@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@bottender/express/-/express-1.0.0.tgz#23784b605ff755947f9d1b850dc02b1caa686559"
+  integrity sha512-kUmT2NvA8mK9TzKfTaL7exR3W3ER7rDsikaPNs+8lDLWRPANbJUA5kooXlWHXVJhueVebPq185MbceH+/L3PoA==
   dependencies:
     body-parser "^1.19.0"
     express "^4.17.1"
@@ -1117,12 +1117,12 @@ body-parser@1.19.0, body-parser@^1.19.0:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
-bottender@1.0.0-beta.4:
-  version "1.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/bottender/-/bottender-1.0.0-beta.4.tgz#44702e53dfce7466631e2caeccf826d6a887178a"
-  integrity sha512-58lonrxjSUXrw8qJwAE+S3DPbRdQxN7WsbHpUfoGeBRpcwW2ZcjvS0vOtDNCQyoKs+wUS8+tOexrevNvZqhwCg==
+bottender@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/bottender/-/bottender-1.0.4.tgz#5721039364be291834ee26a9fed1aa0ab24c0cc4"
+  integrity sha512-HSaiWRJUhyQxc6z3pFcQ6TEayVbLsn4092nZ9P0p8zx6ymfukZ/6KityNTpvj+oOswjQDsOF5R113m99gIIQfw==
   dependencies:
-    "@bottender/express" "^1.0.0-beta.3"
+    "@bottender/express" "^1.0.0"
     "@hapi/joi" "^15.1.1"
     "@slack/rtm-api" "^5.0.3"
     arg "^4.1.1"
@@ -1137,6 +1137,7 @@ bottender@1.0.0-beta.4:
     express "^4.17.1"
     figures "^3.1.0"
     file-type "^12.4.0"
+    fromentries "^1.2.0"
     fs-extra "^8.1.0"
     hasha "^5.1.0"
     import-fresh "^3.2.1"
@@ -1149,7 +1150,7 @@ bottender@1.0.0-beta.4:
     lru-cache "^5.1.1"
     messaging-api-common "^1.0.0-beta.5"
     messaging-api-line "^1.0.0-beta.5"
-    messaging-api-messenger "^1.0.0-beta.5"
+    messaging-api-messenger "^1.0.0-beta.10"
     messaging-api-slack "^1.0.0-beta.5"
     messaging-api-telegram "^1.0.0-beta.5"
     messaging-api-viber "^1.0.0-beta.2"
@@ -2416,6 +2417,11 @@ fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
+
+fromentries@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fromentries/-/fromentries-1.2.0.tgz#e6aa06f240d6267f913cea422075ef88b63e7897"
+  integrity sha512-33X7H/wdfO99GdRLLgkjUrD4geAFdq/Uv0kl3HD4da6HDixd2GUg8Mw7dahLCV9r/EARkmtYBB6Tch4EEokFTQ==
 
 fs-extra@^8.1.0:
   version "8.1.0"
@@ -3973,10 +3979,10 @@ messaging-api-line@^1.0.0-beta.5:
     messaging-api-common "^1.0.0-beta.5"
     warning "^4.0.3"
 
-messaging-api-messenger@^1.0.0-beta.5:
-  version "1.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/messaging-api-messenger/-/messaging-api-messenger-1.0.0-beta.5.tgz#3c4f6c396c2391faa3427293a798f62063496c42"
-  integrity sha512-UGqvVzvShIyETY+w3iOMMpqkNs+jt3hB2MFVtqekeOMZUjVpQ3SYI0cnbs89zEisMCiGPNU5MrIWy/xtDd0fsg==
+messaging-api-messenger@^1.0.0-beta.10:
+  version "1.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/messaging-api-messenger/-/messaging-api-messenger-1.0.0-beta.10.tgz#ced74a88af54b5a0d0e09d383692401257a988f8"
+  integrity sha512-y0Mi0OneGPS1MsjtI6rRUNVYuJtcvDWjJI+E0zd3EVHS79B6/DSPVkK10FsCRe0VyzM/P9RhSaNyMgVt1s9Aqw==
   dependencies:
     append-query "^2.1.0"
     axios "^0.19.0"
