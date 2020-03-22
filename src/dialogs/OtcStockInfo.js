@@ -75,11 +75,11 @@ module.exports = async function TseStockInfo(context) {
                 contents: [
                   {
                     type: 'text',
-                    text: `昨日收盤：${yesterdayClosePrice}`,
+                    text: `昨收：${yesterdayClosePrice}`,
                   },
                   {
                     type: 'text',
-                    text: `今日開盤：${todayOpenPrice}`,
+                    text: `今開：${todayOpenPrice}`,
                   },
                 ],
               },
@@ -89,11 +89,11 @@ module.exports = async function TseStockInfo(context) {
                 contents: [
                   {
                     type: 'text',
-                    text: `今日最高：${todayHighestPrice}`,
+                    text: `今高：${todayHighestPrice}`,
                   },
                   {
                     type: 'text',
-                    text: `今日最低：${todayLowestPrice}`,
+                    text: `今低：${todayLowestPrice}`,
                   },
                 ],
               },
