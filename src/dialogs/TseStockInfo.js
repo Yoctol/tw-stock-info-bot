@@ -48,7 +48,7 @@ module.exports = async function TseStockInfo(context) {
             contents: [
               {
                 type: 'text',
-                text: `市價：${marketPrice} (${sign}${(
+                text: `市價：${Number(marketPrice).toFixed(2)} (${sign}${(
                   ((marketPrice - yesterdayClosePrice) / yesterdayClosePrice) *
                   100
                 ).toFixed(2)}%)`,
@@ -75,11 +75,11 @@ module.exports = async function TseStockInfo(context) {
                 contents: [
                   {
                     type: 'text',
-                    text: `昨收：${yesterdayClosePrice}`,
+                    text: `昨收：${Number(yesterdayClosePrice).toFixed(2)}`,
                   },
                   {
                     type: 'text',
-                    text: `今開：${todayOpenPrice}`,
+                    text: `今開：${Number(todayOpenPrice).toFixed(2)}`,
                   },
                 ],
               },
@@ -89,11 +89,11 @@ module.exports = async function TseStockInfo(context) {
                 contents: [
                   {
                     type: 'text',
-                    text: `今高：${todayHighestPrice}`,
+                    text: `今高：${Number(todayHighestPrice).toFixed(2)}`,
                   },
                   {
                     type: 'text',
-                    text: `今低：${todayLowestPrice}`,
+                    text: `今低：${Number(todayLowestPrice).toFixed(2)}`,
                   },
                 ],
               },
