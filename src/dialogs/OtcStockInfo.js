@@ -117,8 +117,8 @@ module.exports = async function TseStockInfo(context) {
                 height: 'sm',
                 action: {
                   type: 'uri',
-                  label: '玩股網',
-                  uri: `https://m.wantgoo.com/stock/${symbol}`,
+                  label: 'Goodinfo',
+                  uri: `https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=${symbol}`,
                 },
               },
               {
@@ -127,8 +127,18 @@ module.exports = async function TseStockInfo(context) {
                 height: 'sm',
                 action: {
                   type: 'uri',
-                  label: 'Goodinfo',
-                  uri: `https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=${symbol}`,
+                  label: '鉅亨網',
+                  uri: `https://invest.cnyes.com/twstock/TWS/${symbol}/overview`,
+                },
+              },
+              {
+                type: 'button',
+                style: 'link',
+                height: 'sm',
+                action: {
+                  type: 'uri',
+                  label: '玩股網',
+                  uri: `https://m.wantgoo.com/stock/${symbol}`,
                 },
               },
               {
@@ -163,8 +173,18 @@ module.exports = async function TseStockInfo(context) {
                 height: 'sm',
                 action: {
                   type: 'uri',
-                  label: 'Fugle',
-                  uri: `https://www.fugle.tw/ai/${symbol}`,
+                  label: 'MoneyDJ',
+                  uri: `https://www.moneydj.com/KMDJ/Common/ListNewArticles.aspx?svc=WK&a=TW.${symbol}`,
+                },
+              },
+              {
+                type: 'button',
+                style: 'link',
+                height: 'sm',
+                action: {
+                  type: 'uri',
+                  label: '產業鏈',
+                  uri: `https://ic.tpex.org.tw/company_chain.php?stk_code=${symbol}`,
                 },
               },
               {
