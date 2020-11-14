@@ -2,16 +2,10 @@ require('dotenv').config();
 
 module.exports = {
   session: {
-    driver: process.env.NODE_ENV === 'production' ? 'mongo' : 'memory',
+    driver: 'memory',
     stores: {
       memory: {
         maxSize: 500,
-      },
-      mongo: {
-        url:
-          process.env.MONGODB_URI ||
-          'mongodb://localhost:27017/tw-stock-info-bot',
-        collectionName: 'sessions',
       },
     },
   },
