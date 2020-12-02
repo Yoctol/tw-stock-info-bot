@@ -14,11 +14,11 @@ module.exports = async function TseStockInfo(context) {
   const name = stock.name;
 
   const {
-    marketPrice,
-    yesterdayClosePrice,
-    todayOpenPrice,
-    todayHighestPrice,
-    todayLowestPrice,
+    marketPrice = null,
+    yesterdayClosePrice = null,
+    todayOpenPrice = null,
+    todayHighestPrice = null,
+    todayLowestPrice = null,
   } = await getOtcMarketInfo(symbol);
 
   const sign = marketPrice - yesterdayClosePrice > 0 ? '+' : '';
