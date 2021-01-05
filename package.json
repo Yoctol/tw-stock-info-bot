@@ -10,7 +10,7 @@
     "preversion": "npm run test"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "bottender": "^1.4.10",
     "dotenv": "^8.2.0",
     "messaging-api-line": "^0.8.5"
