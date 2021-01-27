@@ -28,5 +28,6 @@ module.exports = async function getTseMarketInfo(symbol) {
     };
   } catch (error) {
     console.log(error);
+    return {};
   }
 };
