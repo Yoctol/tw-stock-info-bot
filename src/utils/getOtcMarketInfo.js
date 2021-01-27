@@ -17,7 +17,7 @@ module.exports = async function getOtcMarketInfo(symbol) {
       o: todayOpenPrice,
       h: todayHighestPrice,
       l: todayLowestPrice,
-    } = t1.data.msgArray[0];
+    } = t1.data.msgArray[0] || {};
 
     return {
       marketPrice,
